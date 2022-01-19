@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GCR Statistics</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- Bootstrap ICONS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Adobe fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/uac0jxe.css">
+    <link rel="stylesheet" href="style.css">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          GCR Statistics
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="/#">Home</a>
+            <a class="nav-link" href="/about/#">About</a>
+            <a class="nav-link" href="/academy/#">The Academy</a>
+            <a class="nav-link" href="/research-tools/#">Research tools</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </head>
+
+  <body>
+
+<!--RESEARCH TOOLS LANDING-->
+  <div class="row text-center py-5">
+    <h1>Study design aid</h1>
+  </div>
+
+  <div class="container mb-5 py-2 border rounded">
+    <div class="row">
+      <h4>1: Define your research question</h4>
+      <h5><em>Which clinical problem do you want to solve?</em></h5>
+      <div class="col-md-4 bg-black text-white my-2">
+        <h4>Domain</h4>
+        <p>
+          Describe your study population and the study setting (as detailed as relevant).
+          The level of detail should be based on the notion to which patients your study results can be generalized (gender, age, disease, type of healthcare instution etc.).
+        </p>
+      </div>
+      <div class="col-md-4 bg-white my-2">
+        <h4>Determinant</h4>
+        <p>
+          The study determinant is the variable(s) under study. This can be a (set of) patient characteristic(s), diagnostic test or treatment, dependent on your research type.
+          If applicable, also think about the variables that you adjust for, reference diagnostic test or comparative treatment.
+        </p>
+      </div>
+      <div class="col-md-4 bg-black text-white my-2">
+        <h4>Outcome</h4>
+        <p>
+          Describe the primary outcome under study as specifically as possible. Include the time of follow-up, if applicable. Avoid non-specific descriptors such as diagnostic value.
+          Secondary study outcomes do not need to be included in the research question.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <p>Here's an example:<br>
+        <em>Does apalutamide <b>[determinant]</b> increase metastasis-free survival <b>[outcome]</b> in patients with nonmetastatic castration resistant prostate cancer <b>[domain]</b> compared to placebo?</em>
+      </p>
+      <div class="d-grid gap-2 col-md-6 mx-auto">
+        <a class="btn btn-outline-dark" href="#" role="button">OVERVIEW OF THE REPORTING TUIDELINES: EQUATOR NETWORK</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mb-5 py-2 border rounded">
+    <div class="row mb-2">
+      <h4>2: Choose your research type and design your study according to epidemiology statements</h4>
+    </div>
+    <div class="row">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Etiological Research
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <h4>Etiological or Causational Research</h4>
+              <p><b>The aim of etiological research is to determine causes/risk factors for disease.</b>
+                Typically a cohort study is used to explore patient characteristics, habits or environmental factors that may cause disease, making sure to adjust for confounding variables.
+                <em>Characteristics: Observational (non-interventional), causal, follow-up.</em>
+                A special type of etiological research is the nested case-control study.
+                Etiological research is closely related to therapeutic research, since both types of research are causal. The difference is that etiological research is observational and not interventional.
+              </p>
+              <div class="d-grid gap-2 col-md-6 mx-auto">
+                <a class="btn btn-outline-dark" href="#" role="button">GO TO ETIOLOGICAL RESEARCH</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Diagnostic Research
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <h4>Diagnostic Research</h4>
+              <p><b>The aim of diagnostic research is to determine the ability of a diagnostic test to estimate disease probability.</b>
+                Typically, a cross-sectional cohort study is used to explore whether a diagnostic test is able to predict whether patients have/don’t have the disease under study at the time of testing.
+                <em>Characteristics: Observational (non-interventional), predictive, cross-sectional.</em>
+                Well-designed studies look at the added value of a diagnostic test in relation to known information (baseline characteristics and other investigations).
+                Diagnostic research is closely related to prognostic research, since both types of research are prediction research. However, diagnostic research is cross-sectional, i.e. tries to predict the presence or absence of disease at the time of testing. In prognostic research, time of follow-up is an important element.
+              </p>
+              <div class="d-grid gap-2 col-md-6 mx-auto">
+                <a class="btn btn-outline-dark" href="#" role="button">GO TO DIAGNOSTIC RESEARCH</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Prognostic Research
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <h4>Prognostic or Prediction Research</h4>
+              <p><b>The aim of prognostic research is to determine the ability of (a set of) variable(s) to predict a certain outcome. </b>
+                 Typically, a cohort study is used to explore whether a set of variables is able to predict whether patients have a certain outcome after follow-up, for example survival after 5 years.
+                <em>Characteristics: Observational (non-interventional), predictive, follow-up.</em>
+                A special type of prognostic research is survival studies (time-to-event analyses).
+                Prognostic research is closely related to ethiological and diagnostic research. The difference with ethiological research is that a causal relationship does not need to proved. Instead, the goal is to select the best predictors for the studied outcome. The difference with diagnostic research is that time of follow-up is an important element.
+              </p>
+              <div class="d-grid gap-2 col-md-6 mx-auto">
+                <a class="btn btn-outline-dark" href="#" role="button">GO TO PROGNOSTIC RESEARCH</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              Intervention Research
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <h4>Intervention or Therapeutic Research</h4>
+              <p><b>The aim of intervention research is to determine the effects of an intervention.</b>
+                 Usually a type of treatment is compared with another, as for example in a randomized controlled trial.
+                <em>Characteristics: Interventional (non-observational), causal, comparative, follow-up</em>
+                Special types of intervention research include before-after studies (using a within-patient control), factorial RCT’s (comparison of multiple interventions, non-inferiority trials and propensity-matched studies.
+                Note: A different kind of research can be conducted on a therapeutic topic. For example, a prognostic study in a cohort of patients treated with anti-hypertensive drugs.
+              </p>
+              <div class="d-grid gap-2 col-md-6 mx-auto">
+                <a class="btn btn-outline-dark" href="#" role="button">GO TO INTERVENTION RESEARCH</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              Reliability/Agreement Research
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <h4>Reliability or Agreement Research</h4>
+              <p><b>The aim of reliability and agreement studies is to provide information about the amount of error inherent in any diagnosis, score, or measurement.</b>
+                 Typically, the interpretation of diagnostic tests is compared across different observers or across different time points in the same observer, while adjusting for chance, to determine the inter- and intra-observer reliability.
+                 Other types of studies measure the equality of different instruments to measure a variable. ‘Reproducibility’ is the umbrella term for reliability and agreement.
+              </p>
+              <div class="d-grid gap-2 col-md-6 mx-auto">
+                <a class="btn btn-outline-dark" href="#" role="button">GO TO REPRODUCIBILITY RESEARCH</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mb-5 py-2 border rounded">
+    <div class="row mb-2">
+      <h4>3: Calculate your required sample size ahead of time</h4>
+      <div class="d-grid gap-2 col-md-6 mx-auto my-2">
+        <a class="btn btn-outline-dark" href="#" role="button">GO TO SAMPLE SIZE CALCULATOR</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mb-5 py-2 border rounded">
+    <div class="row mb-2">
+      <h4>4: Almost time to get started</h4>
+      <p>Before you get started, do yourself a favour and take care of the following items.
+        This will help you publish your research and gain acceptance in the research community.
+      </p>
+      <ol class="list-group list-group-numbered list-group-flush">
+        <li class="list-group-item">Write a study protocol (try to avoid retrospective study designs altogether)</li>
+        <li class="list-group-item">Get IRB approval</li>
+        <li class="list-group-item">Create your study documents (patient information, consent forms etc.)</li>
+        <li class="list-group-item">Create a database and set up your data registration process</li>
+        <li class="list-group-item">Register your study online and/or publish a study protocol</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="container mb-5 py-2 border rounded">
+    <div class="row text-center mb-2">
+      <h4>Do you want to learn more about study methodology and statistical analyses?</h4>
+      <p>Go to the GCR Statistics Academy</p>
+      <div class="d-grid gap-2 col-md-6 mx-auto my-2">
+        <a class="btn btn-primary" href="/academy/#" role="button">START LEARNING</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="links" class="container-fluid bg-white pb-5">
+  <footer class="text-center" style="background-color:white;">
+    <!-- Social links -->
+    <a
+       class="btn btn-link btn-floating btn-lg text-black"
+       href="https://the-nft-doctor.gitbook.io/solana-health-whitepaper/" target="_blank"
+       role="button"
+       data-mdb-ripple-color="light">
+       <i class="bi bi-file-earmark-text-fill" style="font-size: 2rem";></i>
+    </a>
+    <a
+       class="btn btn-link btn-floating btn-lg text-black"
+       href="mailto:iam@thenftdoctor.com" target="_blank"
+       role="button"
+       data-mdb-ripple-color="light">
+       <i class="bi bi-envelope style" style="font-size: 2rem";></i>
+    </a>
+    <a
+       class="btn btn-link btn-floating btn-lg text-black"
+       href="https://twitter.com/solanahealth" target="_blank"
+       role="button"
+       data-mdb-ripple-color="light">
+       <i class="bi bi-twitter" style="font-size: 2rem";></i>
+    </a>
+    <a
+       class="btn btn-link btn-floating btn-lg text-black"
+       href="https://discord.gg/CD5Yhg9EtX" target="_blank"
+       role="button"
+       data-mdb-ripple-color="light">
+       <i class="bi bi-discord" style="font-size: 2rem";></i>
+    </a>
+
+      <!-- Copyright -->
+    <div class="text-center text-dark" style="background-color: white;">
+        © 2021 Copyright:
+      <a class="text-dark" href="https://www.solanahealth.io">gcrstatistics.com</a>
+    </div>
+</footer>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
