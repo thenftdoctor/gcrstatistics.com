@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GCR Statistics</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- Bootstrap ICONS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Adobe fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/uac0jxe.css">
+    <link rel="stylesheet" href="style.css">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          GCR Statistics
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="/#">Home</a>
+            <a class="nav-link" href="/about/#">About</a>
+            <a class="nav-link" href="/academy/#">The Academy</a>
+            <a class="nav-link" href="/research-tools/#">Research tools</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </head>
+
+  <body>
+
+    <div class="row text-center bg-black text-white py-5">
+      <h1>Reproducibility Research</h1>
+    </div>
+
+    <div class="container-fluid bg-light">
+      <div class="row py-2">
+        <h2>Characteristics of Reproducibility Research</h2>
+      </div>
+      <div class="row">
+        <p>
+          <b>Aim?</b>
+            Determine agreement/reliability of a measurement
+
+          <br><b>Observational/Intervention?</b>
+            Observational Research
+
+          <br><b>Causal/Prediction?</b>
+            NA
+
+          <br><b>Cross-sectional/Follow-up?</b>
+            Cross-sectional
+        </p>
+      </div>
+      <div class="row">
+          <p>
+            <b>Research Question Example:</b><br>
+            What is the inter-rater reliability of radiologists reading pulmonary CTA in patients suspected of acute pulmonary embolism?<br><br>
+
+            <b>Typical Study Design:</b><br>
+            Cohort Study<br>
+
+            <b>Alternative Study Design:</b><br>
+            (Nested) Case-control Study<br>
+
+            <b>Data collection:</b><br>
+            Prospective or Retrospective<br>
+
+            <b>Type of Outcomes:</b><br>
+            Inter- or intra-rater agreement (proportions of agreement; standard error of measurement; Bland-Altman bias and 95% limits of agreement) and reliability measures (kappa statistic, ICC)<br>
+
+            <b>Data Analysis</b><br>
+            Descriptive statistics; Bland-Altman plot; ANOVA<br>
+
+            <b>Epidemiological Statement</b><br>
+            GRRAS STATEMENT LINKS:
+            <a href="https://www.equator-network.org/reporting-guidelines/guidelines-for-reporting-reliability-and-agreement-studies-grras-were-proposed/" target="_blank">Website</a> -
+            <a href="https://www.jclinepi.com/article/S0895-4356(10)00097-1/fulltext" target="_blank">General Publication</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="container-fluid mt-5">
+      <div class="row">
+        <h2>Design your study</h2>
+        <p>Follow the outlined steps and start writing down your methodology. When you are finished, you have the basis for your study protocol.
+          Furthermore, you will be able to claim that you have followed the Guidelines for Reporting Reliability and Agreement Studies (GRRAS).
+        </p>
+      </div>
+
+      <div class="row py-2">
+        <h4>Why perform an etiological study?</h4>
+        <p>
+          Clinical measurements and assessments are very important tools in medicine, especially in the diagnostic process.
+          Before we can confidently use a quantitative measurement (for example a blood analysis) or qualitative assessment (for example a radiologist reading a scan or pathologist examining tissue) in clinical practice, we need to make sure that the tests are actually measuring what we are interested in (validity and diagnostic accuracy) and do this with good reproducibility (low measurement error relative to subject/object variability).
+          Sometimes it is our purpose to compare a new method’s reproducibility to an established method, because of a certain advantage (cheaper, less time intensive, safer).
+          Reproducibility can refer to: <b>inter-rater</b> (different raters, using the same scale, classification, instrument, or procedure, assess the same subjects or objects) or <b>intra-rater</b> (same rater, using the same scale, classification, instrument, or procedure, assess the same subjects or objects at different time points) measures.
+          Inter-rater/intra-rater reproducbility is sometimes called inter-observer/intra-observer reproducbility.
+        </p>
+        <p>
+          These reproducibility measures can be further divided into:<br>
+          <b>Agreement:</b> evaluation of the measurement error. <em>How close are scores for repeated measurements?</em><br>
+          <b>Reliability:</b> discriminatory ability. <em>How well can patients be distinguished from each other despite measurement error?</em>
+        </p>
+      </div>
+
+      <div class="row py-2">
+        <h4>What are the biggest challenges in diagnostic research?</h4>
+        <p>
+          <b>Mistaking association/correlation for reproducibility.</b>
+          Unfortunately, some researchers try to prove that two measurements are similar by testing for an association (in continuous outcomes using a linear regression with a correlation coefficient).
+          Two measures can, however, be perfectly correlated but inherently different. In reproducibility research you want to quantify that difference (or measurement error).<br><br>
+          <b>Confusing agreement and reliability.</b><br><br>
+          <b>Figuring out what analysis to use.</b>
+        </p>
+      </div>
+
+      <div class="row py-2">
+        <h4>How to get started?</h4>
+        <p>
+          Hopefully, you have already defined your research question. You know your domain, determinant(s) and outcome of interest.
+          Now, write down the background of the clinical problem, findings of previous studies and rationale of your study.<br>
+          The next step is to <b>meticulously define your study methodology</b>.
+          Your methodology must be so clear ahead of time, that other researchers could easily replicate the study.
+        </p>
+        <div class="col-md-6 py-3">
+          <p>
+            We can divide study design into two parts:
+          </p>
+          <ol class="list-group list-group-numbered list-group-flush border rounded">
+            <li class="list-group-item">Data collection</li>
+            <li class="list-group-item">Data analysis</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="row pt-3 pb-1">
+        <h4>Designing the data collection</h4>
+        <h5><em>Establish your study design</em></h5>
+        <p>
+          Use a cross-sectional study design in which the measurements are performed in a prospective, standardised fashion.
+          It usually pays off to perform multiple, repeated measurements (test-retest method).
+        </p>
+        <h5><em>Patient accrual</em></h5>
+          <p>
+          Describe:<br>
+          - The study setting (primary care, secondary/tertiary hospital, ICU, ED etc.)<br>
+          - The dates and period of recruitment, exposure time, and time of follow-up<br>
+          - Eligibility criteria (inclusion and exclusion criteria).
+        <h5><em>Variables of interest</em></h5>
+          <p>
+          Describe:<br>
+          - Variables of interest<br>
+          - The sources of data<br>
+          - Detailed methods of measurement/assessment (one/multiple raters; level of training, sequence of testing; method of blinding etc.)<br>
+          - Handling of undetermined test outcomes (if possible avoid consensus reading)
+          </p>
+        <h5><em>Outcome(s)</em></h5>
+          <p>
+          Describe:<br>
+          - Primary and secondary outcomes, along with their exact definition<br>
+          - The sources of data<br>
+          - Detailed methods of measurement/assessment (one/multiple raters; level of training, sequence of testing; method of blinding etc.)<br>
+          </p>
+        <h5><em>Bias prevention:</em></h5>
+          <p>
+          Describe how you prevent potential sources of bias (for example selection bias, information bias and confounding)
+          </p>
+      </div>
+
+      <div class="row pt-3 pb-1">
+        <h4>Designing the data analysis</h4>
+          <p>
+          Describe:<br>
+          - How summary data are analysed (mean – sd; median – range). Addition of 95% confidence intervals.<br>
+          - Sample size determination based on primary endpoint (use the Sample Size Calculator)<br>
+          - Which analyses will be performed (Use our Test Wizard)<br>
+          - Transformation of data (if applicable)<br>
+          - Statistical ways of handling missing data: Complete case analysis (not recommended) | Multiple imputation | Reclassification => best or worst-case scenario<br>
+          - Statistical package used for analyses<br>
+          - Assumption of statistical significance
+          </p>
+          <p>Here's some advice on which oucome measures to use (depending on the nature of the measurement):<br>
+            <b>Continuous data</b><br>
+            - Agreement: Bland-Altman plot with bias between methods and 95% limits of agreement; Standard errors of measurement<br>
+            - Reliability:  Intraclass correlation coefficient (specify the subtype of ICC)<br>
+            <b>Categorical data</b><br>
+            - Agreement: Proportions of overall agreement and proportions of specific agreement<br>
+            - Reliability:  Kappa statistics (use matrix of kappa coefficients or weighted kappa for ordinal data)
+          </p>
+      </div>
+    </div>
+
+    <div class="container my-5 py-2 border rounded">
+      <div class="row text-center mb-2">
+        <h4>Do you want to learn more about study methodology and statistical analyses?</h4>
+        <p>Go to the GCR Statistics Academy</p>
+        <div class="d-grid gap-2 col-md-6 mx-auto my-2">
+          <a class="btn btn-dark" href="/academy/#" role="button">START LEARNING</a>
+        </div>
+      </div>
+    </div>
+
+
+        <div id="links" class="container-fluid bg-white pb-5">
+        <footer class="text-center" style="background-color:white;">
+          <!-- Social links -->
+          <a
+             class="btn btn-link btn-floating btn-lg text-black"
+             href="https://the-nft-doctor.gitbook.io/solana-health-whitepaper/" target="_blank"
+             role="button"
+             data-mdb-ripple-color="light">
+             <i class="bi bi-file-earmark-text-fill" style="font-size: 2rem";></i>
+          </a>
+          <a
+             class="btn btn-link btn-floating btn-lg text-black"
+             href="mailto:iam@thenftdoctor.com" target="_blank"
+             role="button"
+             data-mdb-ripple-color="light">
+             <i class="bi bi-envelope style" style="font-size: 2rem";></i>
+          </a>
+          <a
+             class="btn btn-link btn-floating btn-lg text-black"
+             href="https://twitter.com/solanahealth" target="_blank"
+             role="button"
+             data-mdb-ripple-color="light">
+             <i class="bi bi-twitter" style="font-size: 2rem";></i>
+          </a>
+          <a
+             class="btn btn-link btn-floating btn-lg text-black"
+             href="https://discord.gg/CD5Yhg9EtX" target="_blank"
+             role="button"
+             data-mdb-ripple-color="light">
+             <i class="bi bi-discord" style="font-size: 2rem";></i>
+          </a>
+
+            <!-- Copyright -->
+          <div class="text-center text-dark" style="background-color: white;">
+              © 2021 Copyright:
+            <a class="text-dark" href="https://www.solanahealth.io">gcrstatistics.com</a>
+          </div>
+        </footer>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    </body>
+    </html>
