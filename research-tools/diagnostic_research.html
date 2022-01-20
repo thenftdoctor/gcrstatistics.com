@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GCR Statistics</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- Bootstrap ICONS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Adobe fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/uac0jxe.css">
+    <link rel="stylesheet" href="style.css">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          GCR Statistics
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="/#">Home</a>
+            <a class="nav-link" href="/about/#">About</a>
+            <a class="nav-link" href="/academy/#">The Academy</a>
+            <a class="nav-link" href="/research-tools/#">Research tools</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </head>
+
+  <body>
+
+    <div class="row text-center bg-black text-white py-5">
+      <h1>Diagnostic Research</h1>
+    </div>
+
+    <div class="container-fluid bg-light">
+      <div class="row py-2">
+        <h2>Characteristics of Diagnostic Research</h2>
+      </div>
+      <div class="row">
+        <p>
+          <b>Aim?</b>
+            Estimate disease probability
+
+          <br><b>Observational/Intervention?</b>
+            Observational Research
+
+          <br><b>Causal/Prediction?</b>
+            Prediction Research
+
+          <br><b>Cross-sectional/Follow-up?</b>
+            Cross-sectional
+        </p>
+      </div>
+      <div class="row">
+          <p>
+            <b>Research Question Example:</b><br>
+            Can CT pulmonary angiography rule-out pulmonary embolism in patients with an elevated Wells score?<br><br>
+
+            <b>Typical Study Design:</b><br>
+            Cohort Study<br>
+
+            <b>Alternative Study Design:</b><br>
+            (Nested) Case-control Study<br>
+
+            <b>Data collection:</b><br>
+            Prospective or Retrospective<br>
+
+            <b>Type of Outcomes:</b><br>
+            Positive/Negative Predictive Value, Sensitivity, Specificity, AUC of the ROC, Diagnostic OR, Reclassification measures (NRI; IDI)<br>
+
+            <b>Data Analysis</b><br>
+            Frequency statistics (2 x 2 table); Logistic regression analysis (OR); AUC analysis; Reclassification analysis, Prediction/Decision Curve analysis<br>
+
+            <b>Epidemiological Statement</b><br>
+            STARD 2015 STATEMENT LINKS:
+            <a href="http://www.equator-network.org/reporting-guidelines/stard/" target="_blank">Website</a> -
+            <a href="http://www.bmj.com/content/351/bmj.h5527.long" target="_blank">General Publication</a> -
+            <a href="http://bmjopen.bmj.com/content/6/11/e012799" target="_blank">Explanatory Publication</a> -
+            <a href="http://www.equator-network.org/wp-content/uploads/2015/03/STARD-2015-checklist.pdf" target="_blank">Checklist</a><br>
+            STROBE STATEMENT LINKS:
+            <a href="https://www.strobe-statement.org/index.php?id=strobe-home" target="_blank">Website</a> -
+            <a href="http://www.jclinepi.com/article/S0895-4356(07)00436-2/pdf" target="_blank">General Publication</a> -
+            <a href="https://journals.lww.com/epidem/Fulltext/2007/11000/Strengthening_the_Reporting_of_Observational.28.aspx" target="_blank">Explanatory Publication</a> -
+            <a href="https://www.strobe-statement.org/fileadmin/Strobe/uploads/checklists/STROBE_checklist_v4_combined.pdf" target="_blank">Checklist</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="container-fluid mt-5">
+      <div class="row">
+        <h2>Design your study</h2>
+        <p>Follow the outlined steps and start writing down your methodology. When you are finished, you have the basis for your study protocol.
+          Furthermore, you will be able to claim that you have followed the Standards for Reporting Diagnostic Accuracy (STARD 2015) as well as STrengthening the Reporting of OBservational studies in Epidemiology (STROBE) guidelines.
+        </p>
+      </div>
+
+      <div class="row py-2">
+        <h4>Why perform an etiological study?</h4>
+        <p>
+          The aim of diagnostic research is to evaluate <b>how well a diagnostic test can confirm and rule-out a certain disease</b>.<br>
+          Every patient has its own set of characteristics (age, gender, comorbidity etc.), behaviours, signs (physical examination) and symptoms (history taking).
+          The suspicion of a certain disease is raised on the basis of this information.
+          The probability of disease presence is called the <em>prior risk</em>.
+          In reality, a differential diagnosis – a set of possible diseases ordered on the basis of likelihood and/or severity – is established.<br>
+          <em>A subsequent diagnostic test either increases or decreases the prior risk</em>, so that the physician can feel confident about the presence or absence of a specific disease and act accordingly (either treat the disease or repeat the same process for another disease in the differential diagnosis).
+        </p>
+      </div>
+
+      <div class="row py-2">
+        <h4>What types of diagnostic studies are there?</h4>
+        <p>
+          Diagnostic studies can be split into three types of research:<br><br>
+          <b>1. Test research.</b>
+          This is the most published research type. Test research evaluates the isolated ability of a diagnostic test to demonstrate or rule-out a disease.
+          Classically, a first proof of principle needs to be established for a newly developed test.
+          The most efficient way to do this is to select a group of patients with a certain disease, take a random sample of patients without the disease from the same source (case-control study), and subsequently run the test in all patients.
+          The proportion of patients with a positive test result in the diseased group gives us the <b>test sensitivity</b> (aka true positive rate).
+          The proportion of patients with a negative test result in the non-diseased control group gives us the <b>test specificity</b> (aka true negative rate).
+          Test sensitivity and specificity are often called test characteristics, but are dependent on the disease prevalence in the study.
+          Test research is also very applicable to settings in which diagnosis is performed on the basis of just one test, for example screening.<br><br>
+          <b>2. Diagnostic clinical prediction research.</b>
+          This type of research evaluates the added disease probability estimation value of a diagnostic test in relation to all other relevant information.
+          This approach is much more sensible for clinical application, since the set of information that has led to the disease suspicion in the first place (patient characteristics, signs and symptoms etc.) cannot be ignored.
+          Furthermore, almost always multiple tests are ordered (laboratory investigations, radiological imaging, ECG’s etc.).
+          A cross-sectional study design can be used to enrol patients suspected of the disease.
+          It is critical to collect relevant patient information, the outcome of the test under study and a reference standard in all patients.
+          With this information, the <b>positive predictive value</b> (proportion of patients with the disease in those with a positive test outcome) and <b>negative predictive value</b> (proportion of patients without the disease in those with a negative test outcome) can be determined.
+          Subsequently, a multivariable logistic regression model can be build 1) without the test under study and 2) with the test under study.
+          For both models, an AUC (area under the curve) of the ROC (receiver operator curve) is calculated.
+          This gives the proportion of patients correctly discriminated by the test.
+          Now, by comparing the AUC values (and 95% confidence intervals) of both models, it can be determined whether the diagnostic test is helpful.
+          Somewhat more elaborate methods such as reclassification or decision curve analyses can be used to get an idea about the impact of a test on clinical decision making.<br><br>
+          <b>3. Clinical utility trials.</b>
+          This type of study is rarely performed, but is highly relevant to clinical practice.
+          The goal of such a trial is to determine the downstream effect of a diagnostic test on relevant health outcomes.
+          This can range from patient-specific outcomes such as 5-year survival rate to institutional or societal outcomes such as healthcare quality, efficiency and cost-effectiveness.
+          An example is a randomized controlled trial that assesses the survival impact of screening for colorectal cancer with fecal-occult blood testing in the general population with age 55 – 75 years.
+          In this example diagnostic and therapeutic research are combined.
+        </p>
+      </div>
+
+      <div class="row align-items-center bg-light mb-1 py-2">
+        <h5>The most important results of a diagnostic study are presented in a 2 x 2 contingency table</h5>
+        <div class="col-md-4">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th></th>
+                <th scope="col">Disease +</th>
+                <th scope="col">Disease -</th>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Test +</th>
+                <td class="text-center">A</td>
+                <td class="text-center">B</td>
+              </tr>
+              <tr>
+                <th scope="row">Test -</th>
+                <td class="text-center">C</td>
+                <td class="text-center">D</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col">
+          <p><b>Sensitivity</b> or <b>True Positive Rate</b> = A/(A+C)<br>
+          <b>Specificity</b> or <b>True Negative Rate</b> = D/(B+D)<br>
+          <b>Positive Predictive Value</b> = A/(A+B)<br>
+          <b>Negative Predictive Value</b> = D/(C+D)</p>
+        </div>
+        <p>As you can see above specificity, sensitivity, positive and negative predictive values can be calculated with the same simple 2 x 2 table.</p>
+      </div>
+
+      <div class="row align-items-center bg-light py-2 mb-3">
+        <h5>Which of the following questions makes the most sense to you?</h5>
+          <p><b>Sensitivity:</b> Doctor, I know I have the disease, but what is the chance that I will have a positive test outcome?<br>
+          <p><b>Specificity:</b> Doctor, I know I don’t have the disease, but what is the chance that I will have a negative test outcome?<br>
+          <p><b>Positive Predictive Value:</b> Doctor, I have a positive test outcome, now what is the chance that I really do have the disease?<br>
+          <p><b> Negative Predictive Value:</b> Doctor, I have a negative test outcome, but what is the chance that I really don’t have the disease?<br>
+        <p>Unfortunately, sensitivity and specificity rates still form the cornerstone of diagnostic research publications.<br>
+          In my opinion, their value is limited to proof-of-concept studies on new tests. Predictive values are more informative for clinicians!</p>
+      </div>
+
+
+      <div class="row py-2">
+        <h4>What are the biggest challenges in diagnostic research?</h4>
+        <p>
+          <b>- Making sure that you have complete and accurate data on patient characteristics and test outcomes.</b>
+          Retrospective study designs are prone to missing data.
+          Prospective study designs are quite feasible, since follow-up is often times not necessary.<br>
+          <b>- Choosing the right reference test/standard.</b>
+          In diagnostic research, we’ll need to decide whether the patient actually does or doesn’t have the disease.
+          Thus, we need a reference standard against which the new diagnostic test (index test) is evaluated.
+          Every patient needs to receive both the index test and the reference test.
+          Selectively performing only one of the tests may lead to biased study results.
+          If a gold standard (best possible test, for example pathological examination) has already been defined, then this may be the way to go.
+          It becomes slightly more challenging if no other reference test exists or if the goal is to demonstrate that the new test outperforms the gold standard.
+          Using follow-up (diseases tend to get worse if untreated) or a test treatment (if the treatment works this is indirect proof of the disease) may provide solutions to these problems.<br>
+          <b>- Insuring objective test scores.</b>
+          Hopefully the experimental test is relatively objective (good inter-observer reliability/agreement) and replicable (good intra-observer reliability/agreement).
+          Click <a href="" target="_blank">here</a> to learn more about reliability studies.
+          If the test assessment is operator-dependent (for example as in radiological imaging) it is recommended that the assessor is blinded for the reference test outcome.<br>
+          <b>- Finding the right threshold for test outcomes.</b>
+          Test outcomes are not always dichotomous (positive vs. negative).
+          They can also be categorical (low, intermediate, high risk) or continuous (serum CRP value).
+          For continuous measures, a test-positivity cut-off needs to be defined.
+          Area under the curve (AUC) analysis of a receiver operator curve (ROC) can provide sets of sensitivity and specificity rates for various thresholds.
+          The optimal threshold can subsequently be chosen depending on the requirements for the test (good in ruling out, ruling in or a combination).
+          A word of caution: selecting the optimal threshold on the basis of maximum accuracy often results in overly optimistic diagnostic accuracy estimates, and therefore these estimates should be externally validated in an independent sample.<br>
+        </p>
+      </div>
+
+      <div class="row py-2">
+        <h4>How to get started?</h4>
+        <p>
+          Hopefully, you have already defined your research question. You know your domain, determinant(s) and outcome of interest.
+          Now, write down the background of the clinical problem, findings of previous studies and rationale of your study.<br>
+          Include the intended use of the index test.
+          Is it meant for diagnosis, screening, staging, monitoring, surveillance, prognosis or treatment selection?
+          In which setting and type of patients can it be used?
+          What is the clinical role of the index test relative to other tests?
+          Is it primarily used to rule-out (exclude) or rule-in (confirm) disease in low/high risk patients, or does it need to do both? Why?
+          What is the significance of potential test errors (false positives and false negatives)?<br>
+          In diagnostic accuracy studies, it is also important to prespecify testable hypotheses such as minimum levels of sensitivity/specificity, positive/negative predictive value or AUC value, superiority or non-inferiority to another index tests.<br>
+          The next step is to <b>meticulously define your study methodology</b>. Your methodology must be so clear ahead of time, that other researchers could easily replicate the study.
+        </p>
+        <div class="col-md-6 py-3">
+          <p>
+            We can divide study design into two parts:
+          </p>
+          <ol class="list-group list-group-numbered list-group-flush border rounded">
+            <li class="list-group-item">Data collection</li>
+            <li class="list-group-item">Data analysis</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="row pt-3 pb-1">
+        <h4>Designing the data collection</h4>
+        <h5><em>Establish your study design</em></h5>
+        <p>
+          In the early phase of test evaluation use a case-control study design.
+          Select patients with confirmed disease and take a random sample of healthy controls (preferably from the same setting).
+          Take the index test in all patients and record measures of sensitivity, specificity, false positive and false negative rates from a 2 x 2 contingency table.
+          This is also the time to evaluate reliability measures and search for a positive-test threshold for continuous measures.
+          This early phase will give you an idea about the index test’s diagnostic potential.
+          Hopefully, you do realise that the ‘real-world’ diagnostic accuracy should be evaluated in subsequent prospective cohort studies.<br>
+          In subsequent phases of diagnostic accuracy evaluation use a cohort study design.
+          This will allow you to evaluate the index test performance in relation to other relevant information and tests in a larger population with a broad scala of pathology, mirroring the clinical setting in which it is meant to be used.
+          Use a prospective study design unless… This is not feasible.
+          The difference between prospective and retrospective designs lies in the data collection.
+          The analysis is always retrospective.
+          A prospective design allows you to standardise the data collection and try and limit missing data.
+          If you are going to use a retrospective design try to maximise your number of patients complement your data by collaborating with other centers/institutions and patient registries.
+        </p>
+        <h5><em>Patient accrual</em></h5>
+          <p>
+          Describe:<br>
+          - The study setting (primary care, secondary/tertiary hospital, ICU, ED etc.)<br>
+          - The dates and period of recruitment, exposure time, and time of follow-up<br>
+          - Eligibility criteria (inclusion and exclusion criteria).
+          These criteria should be related to the nature and stage of the target disease and future use of the index test.
+          Often times this includes the signs, symptoms and previous test results that have generated the disease suspicion.
+          Only exclude patients with a condition or treatment that adversely affects the way the index test works if this will likely happen in clinical practice as well.<br>
+          - Explain by whom and how eligible candidates are identified.
+          For example all consecutive patients with suspected acute appendicitis were identified by the study nurse on the emergency department.
+          </p>
+        <h5><em>Variables of interest</em></h5>
+          <p>
+          Describe:<br>
+          - The index test under study.<br>
+          - The reference test/standard.<br>
+          - Explain why these tests were chosen and give detailed methods of assessment and measurement (so that these methods are replicable).<br>
+          - Describe by whom these tests are assessed and what their level of training/experience is.<br>
+          - Define positive, negative (and if applicable indeterminate) test outcomes.
+          Define and give the rationale for the positivity cut-off in continuous test measurements.
+          If the aim of the study is to explore the ideal threshold, state so.<br>
+          - Describe whether the investigators assessing the index test were blinded for patient/clinical information and the outcome of the reference test and vice versa.<br>
+          </p>
+        <h5><em>Outcome(s)</em></h5>
+          <p>
+          Describe:<br>
+          - The collection of data on severity of disease in those with the target condition and distribution of alternative diagnoses in those without<br><br>
+          Define primary and secondary outcomes such as:<br>
+          - Optimal positive-test cut-off<br>
+          - Added value of the test in relation to clinical information and previous tests<br>
+          - (If applicable adverse events resulting from the index test)
+          </p>
+        <h5><em>Bias prevention:</em></h5>
+          <p>
+          Describe how you prevent potential sources of bias (for example selection bias, information bias and confounding)
+          </p>
+      </div>
+
+      <div class="row pt-3 pb-1">
+        <h4>Designing the data analysis</h4>
+          <p>
+          Describe:<br>
+          - How summary data are analysed (mean – sd; median – range). Addition of 95% confidence intervals.<br>
+          - Sample size determination based on primary endpoint (use the Sample Size Calculator)<br>
+          - Which analyses will be performed (Use our Test Wizard).
+              For normally distributed data use a parametric test, non-normally distributed data require a non-parametric test.
+              For paired/clustered data use an appropriate test<br>
+          - In the case of model building: method of model assumption evaluation (graphical, numerical), method for variable selection (forward/backward/enter), way of testing (p-value, Likelihood Ratio Test, AIC value), calibration (plot), discrimination (C-index/AUC) and validation (bootstrapping)<br>
+          - Transformation of data (if applicable)<br>
+          - Handling of extreme outliers<br>
+          - Corrections of statistical significance (Bonferroni etc.)<br>
+          - Statistical ways of handling missing data: Complete case analysis (not recommended) | Multiple imputation | Reclassification => best or worst-case scenario<br>
+          - Statistical package used for analyses<br>
+          - Assumption of statistical significance
+          </p>
+          <p>NB: if you use relative measures as your endpoint such as an Odds Ratio (from logistic regression analyses) or Hazard Rate (Survival analyses) try to calculate absolute measures as well.
+            A large relative risk increase on a small a priori risk is still a small risk!</p>
+      </div>
+    </div>
+
+    <div class="container my-5 py-2 border rounded">
+      <div class="row text-center mb-2">
+        <h4>Do you want to learn more about study methodology and statistical analyses?</h4>
+        <p>Go to the GCR Statistics Academy</p>
+        <div class="d-grid gap-2 col-md-6 mx-auto my-2">
+          <a class="btn btn-dark" href="/academy/#" role="button">START LEARNING</a>
+        </div>
+      </div>
+    </div>
+
+
+        <div id="links" class="container-fluid bg-white pb-5">
+        <footer class="text-center" style="background-color:white;">
+          <!-- Social links -->
+          <a
+             class="btn btn-link btn-floating btn-lg text-black"
+             href="https://the-nft-doctor.gitbook.io/solana-health-whitepaper/" target="_blank"
+             role="button"
+             data-mdb-ripple-color="light">
+             <i class="bi bi-file-earmark-text-fill" style="font-size: 2rem";></i>
+          </a>
+          <a
+             class="btn btn-link btn-floating btn-lg text-black"
+             href="mailto:iam@thenftdoctor.com" target="_blank"
+             role="button"
+             data-mdb-ripple-color="light">
+             <i class="bi bi-envelope style" style="font-size: 2rem";></i>
+          </a>
+          <a
+             class="btn btn-link btn-floating btn-lg text-black"
+             href="https://twitter.com/solanahealth" target="_blank"
+             role="button"
+             data-mdb-ripple-color="light">
+             <i class="bi bi-twitter" style="font-size: 2rem";></i>
+          </a>
+          <a
+             class="btn btn-link btn-floating btn-lg text-black"
+             href="https://discord.gg/CD5Yhg9EtX" target="_blank"
+             role="button"
+             data-mdb-ripple-color="light">
+             <i class="bi bi-discord" style="font-size: 2rem";></i>
+          </a>
+
+            <!-- Copyright -->
+          <div class="text-center text-dark" style="background-color: white;">
+              © 2021 Copyright:
+            <a class="text-dark" href="https://www.solanahealth.io">gcrstatistics.com</a>
+          </div>
+        </footer>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    </body>
+    </html>
