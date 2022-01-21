@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GCR Statistics</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- Bootstrap ICONS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Adobe fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/uac0jxe.css">
+    <link rel="stylesheet" href="/style.css">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          GCR Statistics
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="/#">Home</a>
+            <a class="nav-link" href="/about/#">About</a>
+            <a class="nav-link" href="/academy/#">The Academy</a>
+            <a class="nav-link" href="/research-tools/#">Research tools</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </head>
+
+  <body>
+    <!--Scrollbutton-->
+
+    <div class="row text-center py-5">
+      <h1>Test Wizard</h1>
+    </div>
+
+    <div id="top" class="container min-vh-100">
+      <div class="row mt-5">
+        <h4 class="text-start mb-3"><u>What do you want to evaluate?</u></h4>
+        <div class="col-md-6 mb-2 p-3 border rounded">
+          <h5>Differences</h5>
+            <a href="#differences">Test for differences between groups/variables</a>
+        </div>
+        <div class="col-md-6 mb-2 p-3 border rounded">
+          <h5>Associations</h5>
+            <a href="#association">Simple association/correlation between 2 variables</a><br>
+            <a href="#prediction">Predict an outcome or build a prediction model</a><br>
+            <a href="#reproducibility">Test the agreement and/or reliability of variables</a>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div id="differences" class="container min-vh-100">
+      <div class="row mt-5">
+        <h4 class="text-start mb-3"><u>Differences</u></h4>
+        <div class="col-md-6 mb-2 p-3 border rounded">
+          <h5>Is your outcome categorical or continuous</h5>
+          <a href="#differences_categorical">Categorical</a><br>
+          <a href="#differences_continuous">Continuous</a>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div id="differences_categorical" class="container min-vh-100">
+      <div class="row mt-5">
+        <h4 class="text-start mb-3"><u>Differences / Categorical outcomes</u></h4>
+        <div class="col-md-6 mb-2 p-3 border rounded">
+          <h5>Do you want to compare 2 or more groups/variables or compare the mean/median of 1 variable to a population value/0?</h5>
+          <a href="#differences_categorical_2groups">2 or more groups</a><br>
+          <a href="#differences_categorical_1group">1 group</a>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div id="differences_categorical_2groups" class="container min-vh-100">
+      <div class="row mt-5">
+        <h4 class="text-start mb-3"><u>Differences / Categorical outcomes / 2 or more groups</u></h4>
+        <div class="col-md-6 mb-2 p-3 border rounded">
+          <p><em>For independent variables/outcomes (default) use:</em><br>
+          <b>Pearson's chi-squared test</b>.
+          <p>Use the <b>Fisher's exact test</b> instead if any outcome has less then 10 counts.</p>
+        </div>
+        <div class="col-md-6 mb-2 p-3 border rounded">
+          <p><em>For dependent variables/outcomes (clustered dat) use:</em><br>
+          <b>McNemar's test</b></p>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div id="differences_categorical_1group" class="container min-vh-100">
+      <div class="row mt-5">
+        <h4 class="text-start mb-3"><u>Differences / Categorical outcomes / 1 group</u></h4>
+        <div class="col-md-6 mb-2 p-3 border rounded">
+          <p><em>You can use:</em><br>
+          <b>Binomial</b> or <b> Chi-squared goodness of fit test</b>.
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div id="differences_continuous" class="container min-vh-100">
+      <div class="row mt-5">
+        <h4 class="text-start mb-3"><u>Differences / Continuous outcomes</u></h4>
+        <h5>Do you want to compare 2 or more groups/Variables
+        or compare the mean/median of 1 variable to a population value/0?
+        </h5>
+        <div class="col-md-6 mb-2 p-3 border rounded">
+          <a href="#differences_continuous_2groups">2 groups</a><br>
+          <a href="#differences_continuous_>2groups">> 2 groups</a><br>
+          <a href="#differences_continuous_1group"> 1 group</a>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div id="differences_continuous_2groups" class="container min-vh-100">
+      <div class="row mt-5">
+        <h4 class="text-start mb-3"><u>Differences / Continuous outcomes / 2 groups</u></h4>
+        <h5>Are the groups unrelated (independent/non-clustered data)?
+        </h5>
+        <div class="col-md-6 mb-2 p-3 border rounded">
+          <a href="#differences_continuous_2groups_independent">Yes (default)</a><br>
+          <a href="#differences_continuous_2groups_dependent">No</a><br>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div id="differences_continuous_2groups_independent" class="container min-vh-100">
+      <div class="row mt-5">
+        <h4 class="text-start mb-3"><u>Differences / Continuous outcomes / 2 groups / Independent</u></h4>
+        <div class="col-md-6 mb-2 p-3 border rounded">
+          <p><em>For normally distributeed outcome (default) use:</em><br>
+          <b>2-sample Student's t-test</b>.
+        </div>
+        <div class="col-md-6 mb-2 p-3 border rounded">
+          <p><em>For non-normally distributeed outcome use:</em><br>
+          <b>Wilcoxon rank-sum test (a.k.a Mann-Whitney U test)</b>.
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div id="differences_continuous_2groups_dependent" class="container min-vh-100">
+      <div class="row mt-5">
+        <h4 class="text-start mb-3"><u>Differences / Continuous outcomes / 2 groups / Dependent</u></h4>
+        <div class="col-md-6 mb-2 p-3 border rounded">
+          <p><em>For normally distributeed outcome (default) use:</em><br>
+          <b>Paired Student's t-test</b>.
+        </div>
+        <div class="col-md-6 mb-2 p-3 border rounded">
+          <p><em>For non-normally distributeed outcome use:</em><br>
+          <b>Wilcoxon signed-rank test</b>.
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div id="differences_continuous_>2groups" class="container min-vh-100">
+      <div class="row mt-5">
+        <h4 class="text-start mb-3"><u>Differences / Continuous outcomes / >2 groups</u></h4>
+        <div class="col-md-6 mb-2 p-3 border rounded">
+          <p><em>For normally distributeed outcome (default) use:</em><br>
+          <b>One-way ANOVA</b>.
+        </div>
+        <div class="col-md-6 mb-2 p-3 border rounded">
+          <p><em>For non-normally distributeed outcome use:</em><br>
+          <b>Kruskal-Wallis test</b>.
+        </div>
+        <p>
+          NB: performing an analysis on more than 2 groups of dependent continuous data usually entails a <em>repeated-measurement analysis</em> on so-called <em>longitudinal data</em>.
+          This either requires separate comparisons of each 2-time points or a complex type of analysis such as <em>linear mixed effects regression modelling</em> (learn more in the <a href="/academy/" target="_blank">GCR academy</a>).
+        </p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div id="differences_continuous_1group" class="container min-vh-100">
+      <div class="row mt-5">
+        <h4 class="text-start mb-3"><u>Differences / Continuous outcomes / 1 group</u></h4>
+        <div class="col-md-6 mb-2 p-3 border rounded">
+          <p><em>For normally distributeed outcome (default) use:</em><br>
+          <b>1-sample Student's t-test</b>.
+        </div>
+        <div class="col-md-6 mb-2 p-3 border rounded">
+          <p><em>For non-normally distributeed outcome use:</em><br>
+          <b>Sign test</b>.
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div id="association" class="container min-vh-100">
+      <div class="row mt-5">
+        <h4 class="text-start mb-3"><u>Association-Correlation</u></h4>
+        <h5>Are both variables dichotomous/categorical or continuous?
+        </h5>
+        <div class="col-md-6 mb-2 p-3 border rounded">
+          <a href="#association_categorical">Dichotomous/Categorical</a><br>
+          <a href="#association_continuous">Continuous</a><br>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div id="association_categorical" class="container min-vh-100">
+      <div class="row mt-5">
+        <h4 class="text-start mb-3"><u>Association-Correlation / Categorical</u></h4>
+        <div class="col-md-6 mb-2 p-3 border rounded">
+          <p><em>You can use:</em><br>
+          <b>Pearson's chi-square test</b>
+          <p>Use <b>Fisher's exact test</b> if any of the outcomes has less then 10 counts.</p>
+        </div>
+        <div class="col-md-6 mb-2 p-3 border rounded">
+          <p><em>You can also use:</em><br>
+          <b>Logistic regression analysis</b>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div id="association_continuous" class="container min-vh-100">
+      <div class="row mt-5">
+        <h4 class="text-start mb-3"><u>Association-Correlation / Continuous</u></h4>
+        <div class="col-md-6 mb-2 p-3 border rounded">
+          <p><em>You can use:</em><br>
+          <b>Pearson's correlation coefficient</b>
+        </div>
+        <div class="col-md-6 mb-2 p-3 border rounded">
+          <p><em>You can also use:</em><br>
+          <b>Simple linear regression analysis</b>
+        </div>
+        <p>
+          NB: use this approach to evaluate whether two different variables are correlated.
+          Evaluating the agreement/reliability between two similar variables requires <a href ="#reproducbility">a different approach</a>.
+        </p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div id="prediction" class="container min-vh-100">
+      <div class="row mt-5">
+        <h4 class="text-start mb-3"><u>Prediction</u></h4>
+        <h5>What is the nature of the outcome that you want to predict?
+        </h5>
+        <div class="col-md-6 mb-2 p-3 border rounded">
+          <a href="#prediction_categorical">Dichotomous/Categorical</a><br>
+          <a href="#prediction_continuous">Continuous</a><br>
+          <a href="#prediction_survival">Time-to-event/Survival data</a>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div id="prediction_categorical" class="container min-vh-100">
+      <div class="row mt-5">
+        <h4 class="text-start mb-3"><u>Prediction / Categorical</u></h4>
+        <div class="col-md-6 mb-2 p-3 border rounded">
+          <p><em>You can use:</em><br>
+          <b>Logistic regression analysis</b>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div id="prediction_continuous" class="container min-vh-100">
+      <div class="row mt-5">
+        <h4 class="text-start mb-3"><u>Prediction / Continuous</u></h4>
+        <div class="col-md-6 mb-2 p-3 border rounded">
+          <p><em>You can use:</em><br>
+          <b>Linear regression analysis</b>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div id="prediction_survival" class="container min-vh-100">
+      <div class="row mt-5">
+        <h4 class="text-start mb-3"><u>Prediction / Survival</u></h4>
+        <div class="col-md-6 mb-2 p-3 border rounded">
+          <p><em>For a univariable or descriptive analysis use:</em><br>
+          <b>Kaplan-Meier analysis +/- Log-rank test</b>
+        </div>
+        <div class="col-md-6 mb-2 p-3 border rounded">
+          <p><em>For a multivariable prediction model use:</em><br>
+          <b>Cox Proportional-Hazards model</b>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div id="reproducibility" class="container min-vh-100">
+      <div class="row mt-5">
+        <h4 class="text-start mb-3"><u>Agreement-reliability</u></h4>
+        <h5>What is the nature of the outcome that you want to predict?
+        </h5>
+        <div class="col-md-6 mb-2 p-3 border rounded">
+          <a href="#reproducibility_nominal">Nominal</a><br>
+          <a href="#reproducibility_ordinal">Ordinal</a><br>
+          <a href="#reproducibility_continuous">Continuous</a>
+        </div>
+        <p>Nominal variables are unranked categorical, ordinal variables are ranked categorical.</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div id="reproducibility_nominal" class="container min-vh-100">
+      <div class="row mt-5">
+        <h4 class="text-start mb-3"><u>Agreement-reliability / Nominal</u></h4>
+        <div class="col-md-6 mb-2 p-3 border rounded">
+          <p><em>For agreement use:</em><br>
+          <b>Proportions of (specific) agreement</b>
+        </div>
+        <div class="col-md-6 mb-2 p-3 border rounded">
+          <p><em>For reliability use:</em><br>
+          <b>Cohen's kappa</b>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div id="reproducibility_nominal" class="container min-vh-100">
+      <div class="row mt-5">
+        <h4 class="text-start mb-3"><u>Agreement-reliability / Nominal</u></h4>
+        <div class="col-md-6 mb-2 p-3 border rounded">
+          <p><em>For agreement use:</em><br>
+          <b>Proportions of (specific) agreement</b>
+        </div>
+        <div class="col-md-6 mb-2 p-3 border rounded">
+          <p><em>For reliability use:</em><br>
+          <b>Cohen's kappa</b>
+        </div>
+        <p>
+          NB: Reproducibility is the umbrella term for agreement and reliability.<br><br>
+          <b>Agreement</b> is an evaluation of the measurement error (number of cases with agreement/number of total cases).<br>
+          It answers the question: <em>How close are scores for repeated measurements?</em><br><br>
+          <b>Reliability</b> is an evaluation of discriminatory ability (measure of agreement corrected for agreement by chance).<br>
+          It answers the question: <em>How well can patients be distinguished from each other despite measurement error?</em><br><br>
+          See the <a href="/research-tools/reproducibility_research.html" target="_blank">reproducibility research page in the study design aid</a> for more info.
+        </p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div id="reproducibility_ordinal" class="container min-vh-100">
+      <div class="row mt-5">
+        <h4 class="text-start mb-3"><u>Agreement-reliability / Ordinal</u></h4>
+        <div class="col-md-6 mb-2 p-3 border rounded">
+          <p><em>For agreement use:</em><br>
+          <b>Proportions of (specific) agreement</b>
+        </div>
+        <div class="col-md-6 mb-2 p-3 border rounded">
+          <p><em>For reliability use:</em><br>
+          <b>Ranked intraclass correlation</b><br>
+          <b>Matrix of kappa coefficients</b><br>
+          <b>Weighted kappa</b>
+        </div>
+        <p>
+          NB: Reproducibility is the umbrella term for agreement and reliability.<br><br>
+          <b>Agreement</b> is an evaluation of the measurement error (number of cases with agreement/number of total cases).<br>
+          It answers the question: <em>How close are scores for repeated measurements?</em><br><br>
+          <b>Reliability</b> is an evaluation of discriminatory ability (measure of agreement corrected for agreement by chance).<br>
+          It answers the question: <em>How well can patients be distinguished from each other despite measurement error?</em><br><br>
+          See the <a href="/research-tools/reproducibility_research.html" target="_blank">reproducibility research page in the study design aid</a> for more info.
+        </p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div id="reproducibility_continuous" class="container min-vh-100">
+      <div class="row mt-5">
+        <h4 class="text-start mb-3"><u>Agreement-reliability / Continuous</u></h4>
+        <div class="col-md-6 mb-2 p-3 border rounded">
+          <p><em>For agreement use:</em><br>
+          <b>Bland-Altman plot with bias and 95% limits of agreement</b>
+          <b>Standard error of measurement</b><br>
+          <b>Coefficients of variation</b><br>
+        </div>
+        <div class="col-md-6 mb-2 p-3 border rounded">
+          <p><em>For reliability use:</em><br>
+          <b>Intraclass correlation coefficients</b><br>
+        </div>
+        <p>
+          NB: Reproducibility is the umbrella term for agreement and reliability.<br><br>
+          <b>Agreement</b> is an evaluation of the measurement error (number of cases with agreement/number of total cases).<br>
+          It answers the question: <em>How close are scores for repeated measurements?</em><br><br>
+          <b>Reliability</b> is an evaluation of discriminatory ability (measure of agreement corrected for agreement by chance).<br>
+          It answers the question: <em>How well can patients be distinguished from each other despite measurement error?</em><br><br>
+          See the <a href="/research-tools/reproducibility_research.html" target="_blank">reproducibility research page in the study design aid</a> for more info.
+        </p>
+      </div>
+    </div>
+
+
+<!--FOOTER-->
+    <div id="links" class="container-fluid bg-white pb-5">
+    <footer class="text-center" style="background-color:white;">
+      <!-- Social links -->
+      <a
+         class="btn btn-link btn-floating btn-lg text-black"
+         href="https://the-nft-doctor.gitbook.io/solana-health-whitepaper/" target="_blank"
+         role="button"
+         data-mdb-ripple-color="light">
+         <i class="bi bi-file-earmark-text-fill" style="font-size: 2rem";></i>
+      </a>
+      <a
+         class="btn btn-link btn-floating btn-lg text-black"
+         href="mailto:iam@thenftdoctor.com" target="_blank"
+         role="button"
+         data-mdb-ripple-color="light">
+         <i class="bi bi-envelope style" style="font-size: 2rem";></i>
+      </a>
+      <a
+         class="btn btn-link btn-floating btn-lg text-black"
+         href="https://twitter.com/solanahealth" target="_blank"
+         role="button"
+         data-mdb-ripple-color="light">
+         <i class="bi bi-twitter" style="font-size: 2rem";></i>
+      </a>
+      <a
+         class="btn btn-link btn-floating btn-lg text-black"
+         href="https://discord.gg/CD5Yhg9EtX" target="_blank"
+         role="button"
+         data-mdb-ripple-color="light">
+         <i class="bi bi-discord" style="font-size: 2rem";></i>
+      </a>
+
+        <!-- Copyright -->
+      <div class="text-center text-dark" style="background-color: white;">
+          © 2021 Copyright:
+        <a class="text-dark" href="https://www.solanahealth.io">gcrstatistics.com</a>
+      </div>
+    </footer>
+    </div>
+
+    <button type="button" class="btn btn-outline-dark btn-floating" id="btn-back-to-top">
+      <i class="bi bi-chevron-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="/index.js"></script>
+
+    </body>
+  </html>
